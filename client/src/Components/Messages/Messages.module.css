@@ -1,0 +1,86 @@
+.control-input input,
+.control-input textarea {
+    outline: none;
+    background: none;
+    font-size: 20px;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 2px solid grey;
+    color: black;
+    transition: all 0.15s ease-in-out;
+    width: 800px;
+    height: 100px;
+}
+
+.control-input input:focus,
+.control-input textarea:focus {
+    border: 2px solid #6656a4;
+}
+.send-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+.send-container button{
+    width: 80px;
+}
+.messages-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.message-container img{
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+.message-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    padding-bottom: 60px;
+}
+.message-container .sender-profile{
+    display: flex;
+    align-items: center;
+}
+.message-container .sender-profile .name-time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.message-container .sender-profile .name-time .sender-name{
+    font-size: 22px;
+    color: #3498db;
+}
+.message-container .sender-profile .name-time .time-stamp{
+    font-size: 19px;
+    color: grey;
+}
+.message-container .content{
+    font-size: 28px;
+}
+.error-text {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: rgb(248, 56, 56);
+}
+
+.send-container button.cannotSubmit {
+    opacity: 0.8;
+    background-color: grey;
+    border: none;
+    cursor: not-allowed;
+
+}
+.send-container button.cannotSubmit:hover {
+    background-color: grey;
+    color: black
+}

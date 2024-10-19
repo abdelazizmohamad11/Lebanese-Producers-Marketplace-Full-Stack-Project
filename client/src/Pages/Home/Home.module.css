@@ -1,0 +1,244 @@
+.headerBackground {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../../Assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    z-index: -1;
+}
+
+.intro {
+    color: black;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 20px;
+}
+
+.intro h2 {
+    font-size: 36px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.intro p {
+    padding: 0px;
+    margin: 0px;
+}
+
+.intro div {
+    display: flex;
+    gap: 10px;
+}
+
+.info-section {
+    margin-top: 50vh;
+    margin-bottom: 5vh;
+    display: grid;
+    grid-template-columns: 25% 40% 25%;
+    gap: 30px;
+    padding: 0px 20px;
+}
+
+.info-section img {
+    width: 100%;
+    height: 300px;
+}
+
+.info-section .middle {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.info-section .middle .upright {
+    position: absolute;
+    top: -16.5px;
+    right: -2px;
+    font-size: 30px;
+}
+
+.info-section .middle .downleft {
+    position: absolute;
+    top: 95%;
+    font-size: 30px;
+    left: -2px;
+}
+
+.best-producers {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    row-gap: 40px;
+    width: 80%;
+    margin: auto;
+    font-size: 20px;
+    margin-bottom: 10vh;
+}
+
+.best-producers .producer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-right: 2px solid #ADD8E6;
+    padding: 10px 0;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    position: relative;
+}
+
+.best-producers .producer:hover {
+    background-color: #ADD8E6;
+    color: white;
+}
+
+.best-producers .producer img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #ADD8E6;
+}
+
+.best-producers .producer .producer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.best-producers .producer .rating {
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: gold;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 20%;
+
+}
+
+h2.section-title {
+    text-align: center;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    font-size: 34px;
+}
+
+.top-products,
+.top-producers {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 40px;
+}
+
+.top-products .product,
+.top-producers .producer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid #ADD8E6;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.top-products .product .image-rating,
+.top-producers .producer .image-rating {
+    position: relative;
+}
+
+.top-products .product .image-rating .product-rating,
+.top-producers .producer .image-rating .producer-rating {
+    position: absolute;
+    top: 5%;
+    left: 4%;
+    background-color: gold;
+    color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.top-products .product .image-rating img,
+.top-producers .producer .image-rating img {
+    width: 100%;
+    height: 35vh;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom: 1px solid #ADD8E6;
+    object-fit: cover;
+}
+
+.top-products .product .product-info,
+.top-producers .producer .producer-info {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.top-products .product .product-info .product-by {
+    margin-bottom: 10px;
+    color: #358fad;
+    font-weight: bold;
+
+}
+
+.top-products .product .product-info .product-name,
+.top-producers .producer .producer-info .producer-name {
+    margin-bottom: 10px;
+    font-size: 22px;
+    transform: scaleY(1.1);
+}
+
+.top-products .product .image-rating .more-details,
+.top-producers .producer .image-rating .more-details {
+    position: absolute;
+    bottom: 5%;
+    left: 4%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: white;
+    transform: scale(0);
+    transition: all 0.15s ease-in-out;
+}
+
+.top-products .product:hover .image-rating .more-details,
+.top-producers .producer:hover .image-rating .more-details {
+    transform: scale(1);
+}
+
+.top-producers .producer .producer-info .producer-bussiness {
+    display: flex;
+    align-items: center;
+
+}
+
+.top-producers .producer .producer-info .producer-bussiness p {
+    padding: 0;
+    color: grey;
+    margin: 0px;
+}
+
+.top-producers .producer .producer-info .producer-bussiness p:first-child {
+    transform: scaleY(1.1);
+    font-size: 20px;
+    color: black;
+}
+

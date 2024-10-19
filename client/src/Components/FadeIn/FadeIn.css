@@ -1,0 +1,11 @@
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Optional: Add a subtle vertical translation */
+    transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}

@@ -1,0 +1,249 @@
+.container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #4682B4;
+    color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    /* Optional: Add a subtle vertical translation */
+    animation: fadeIn ease-in-out 1s forwards;
+}
+
+h2.title {
+    text-align: center;
+}
+
+.container button {
+    color: white;
+}
+
+.form {
+    margin: 2rem 0 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-input img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.control-input {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 20px;
+}
+
+.control-input label {
+    text-align: left;
+}
+
+.control-input input,
+.control-input textarea {
+    outline: none;
+    background: none;
+    font-size: 20px;
+    padding: 0.7rem;
+    width: 450px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    color: white;
+    transition: all 0.15s ease-in-out;
+}
+
+.control-input input:focus,
+.control-input textarea:focus {
+    border: 2px solid #6656a4;
+}
+
+.error-text {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: rgb(248, 56, 56);
+}
+
+input.invalid {
+    border-color: red;
+}
+
+.navigate-button {
+    background: none;
+    border: none;
+    padding: 10px;
+    border: 1px solid #ADD8E6;
+    color: white;
+    width: 100px;
+    font-size: 19px;
+    border-radius: 10px;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+
+.navigate-button:hover {
+    background-color: #ADD8E6;
+}
+
+.navigate-button.cannotSubmit {
+    opacity: 0.8;
+    background-color: grey;
+    border: none;
+    cursor: not-allowed;
+
+}
+
+.navigate-button.cannotSubmit:hover {
+    background-color: grey;
+}
+
+.control-input div {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 40px;
+}
+
+.control-input select {
+    outline: none;
+    background: none;
+    padding: 0.7rem;
+    width: 470px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.control-input textarea {
+    outline: none;
+    background: none;
+    font-size: 20px;
+    padding: 0.7rem;
+    width: 450px;
+    border-radius: 5px;
+    border: 2px solid grey;
+    color: white;
+    transition: all 0.15s ease-in-out;
+}
+
+.edited {
+    font-size: 19px;
+    color: green;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px;
+    font-size: 19px;
+    border: 2px solid #ADD8E6;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+
+.custom-file-upload:hover {
+    background-color: #ADD8E6;
+    color: white;
+}
+
+
+.checkbox-group h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.checkbox-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 450px;
+}
+
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transition: all 0.15s ease-in-out;
+}
+
+.checkbox-container:hover input~.checkmark {
+    background-color: #e0e0e0;
+    transition: all 0.15s ease-in-out;
+}
+
+.checkbox-container input:checked~.checkmark {
+    background-color: #ADD8E6;
+}
+
+.checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+}
+
+.checkbox-container input:checked~.checkmark:after {
+    display: block;
+}
+
+.checkbox-container .checkmark:after {
+    left: 10px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+.container a {
+    width: 450px;
+    color: grey;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

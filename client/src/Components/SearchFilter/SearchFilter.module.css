@@ -1,0 +1,156 @@
+.searchFilter {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #24687e;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000000000;
+  animation: slideIn 1.5s ease-in-out forwards;
+  gap: 25px;
+  color: white;
+}
+
+.searchFilter.closing {
+  animation: slideOut 1.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.searchFilter h2 {
+  animation: fadeIn 0.5s ease-in-out forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.searchFilter h2.closing {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+.options {
+  display: flex;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+
+.options.closing {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+.optionButton {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 16px;
+  transition: all 0.2s ease-in-out;
+}
+
+.optionButton.selected {
+  background-color: #ADD8E6;
+  border-radius: 5px;
+  color: white;
+}
+
+.searchInputContainer {
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+.searchInputContainer.closing {
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+.searchInput {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 10px;
+}
+
+.searchButton {
+  background-color: #ADD8E6;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.close {
+  background: none;
+  outline: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+  animation: fadeIn 0.5s ease-in-out forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+  color: white;
+}
+.close.closing{
+  animation: fadeOut 0.5s ease-in-out forwards;
+}
+.close:hover {
+  opacity: 0.8;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideOut {
+  0% {
+    transform: translateY(0%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

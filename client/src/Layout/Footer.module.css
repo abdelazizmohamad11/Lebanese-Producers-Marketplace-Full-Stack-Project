@@ -1,0 +1,120 @@
+.footer{
+    background-color: #358fad;
+    font-size: 20px;
+    color: white;
+    margin-top: 25vh;
+}
+.footer .grid{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #ADD8E6;
+    border-right: 1px solid #ADD8E6;
+    padding-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer .grid .row1{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border-bottom: 1px solid #ADD8E6;
+}
+.footer .grid .row1 .col{
+    padding: 20px;
+}
+.footer .grid .row1 .col ul{
+    list-style: none;
+    padding: 12px;
+    margin: 0;
+    padding-left: 8px;
+}
+.footer .grid .row1 .col ul li{
+    opacity: 0.8;
+    padding: 4px;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+.footer .grid .row1 .col ul li:hover{
+    opacity: 1;
+}
+.row2{
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ADD8E6;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.row2 .subscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.row2 label{
+    display: block;
+}
+.row2 input{
+    width: 300px;
+    padding:10px;
+    margin: 15px;
+    margin-left: 0px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    border-bottom: 1px solid rgba(255,255,255,0.7);
+    outline: none;
+    transition: all 0.15s ease-in-out;
+    display: block;
+}
+.row2 input:focus{
+    border-bottom: 1px solid rgba(255,255,255,1);
+}
+.row2 input::placeholder{
+    color: white;
+    opacity: 0.7;
+}
+.row2 .follow-us{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 20px;
+    margin-right: 20px;
+}
+.row2 .follow-us-logos{
+    display: flex;
+    font-size: 22px;
+    gap: 20px;
+}.row2 .follow-us-logos i{
+    cursor: pointer;
+}
+.row2 .follow-us-logos i:hover{
+    transform: scale(1.1);
+}
+.row3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-size: 18px;
+    
+}
+.row3 a{
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+}
+.row3 a:hover{
+    opacity: 1;
+}
+.row3 p{
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+}
+.row2 Button{
+    color: white;
+}

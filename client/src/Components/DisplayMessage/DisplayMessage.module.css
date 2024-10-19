@@ -1,0 +1,51 @@
+.displayMessage {
+    position: fixed;
+    top: 10vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    padding: 15px;
+    border-radius: 5px;
+    animation-name: fade, fade-out;
+    animation-duration: 1s,1s;
+    animation-delay: 0s,3.5s;
+    animation-timing-function: ease-in-out,ease-in-out;
+    animation-fill-mode: forwards,forwards;
+    z-index: 999999999;
+    font-size: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    color: black;
+}
+
+.error {
+    background-color: red;
+}
+
+.success {
+    background-color: green;
+    color: white;
+}
+
+.warning {
+    background-color: yellow;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.8;
+    }
+}
+
+@keyframes fade-out {
+    from {
+        opacity: 0.8;
+    }
+
+    to {
+        opacity: 0;
+    }
+}

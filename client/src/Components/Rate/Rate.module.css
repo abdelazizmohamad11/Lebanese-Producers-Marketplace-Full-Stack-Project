@@ -1,0 +1,77 @@
+.productRatingForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.productRatingForm h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.ratingInput {
+    margin-bottom: 15px;
+}
+
+.ratingInput label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.ratingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ratingContainer input {
+    flex: 1;
+    width: 100%;
+    margin-right: 10px;
+}
+
+.ratingContainer span {
+    font-size: 18px;
+    color: #3498db;
+}
+
+.submitButton{
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submitButton:hover {
+    background-color: #2980b9;
+}
+.submitButton.cannotSubmit{
+    opacity: 0.8;
+    background-color: grey;
+    border: none;
+    cursor: not-allowed;
+}
+.submitButton.cannotSubmit:hover{
+    background-color: grey;
+}
+.success{
+    color: green;
+}
+.close{
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+}
+.close:hover{
+    opacity: 0.8;
+}

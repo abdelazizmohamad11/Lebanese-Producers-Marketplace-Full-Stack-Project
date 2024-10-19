@@ -1,0 +1,136 @@
+.profile-container {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.profile-container .cover {
+    width: 100%;
+    height: 250px;
+    background: linear-gradient(to bottom, #3498db, #2c3e50);
+    /* Adjust colors as needed */
+}
+
+.profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-45%);
+    padding: 30px;
+    font-size: 24px;
+    animation: fade-in ease-in-out 1s forwards;
+}
+
+.profile-info .rating {
+    padding: 20px;
+    padding-top: 35px;
+    color: gold;
+}
+
+.profile-info .profile-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-info img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.profile-info .profile-content .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-info .profile-content .info .name {
+    font-size: 44px;
+    padding: 10px;
+    color: white;
+}
+
+.profile-info .profile-content .info .bussiness {
+    color: #358fad;
+}
+
+.bulk {
+    width: 85%;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 30px;
+    transform: translateY(20px);
+    /* Optional: Add a subtle vertical translation */
+    animation: fadeIn ease-in-out 1s forwards;
+}
+
+.bulk p,
+.description p {
+    font-size: 24px;
+}
+
+.bulk button {
+    width: 500px;
+}
+
+.description {
+    width: 85%;
+    margin: auto;
+    transform: translateY(20px);
+    /* Optional: Add a subtle vertical translation */
+    animation: fadeIn ease-in-out 1s forwards;
+}
+
+.producer-products {
+    width: 85%;
+    margin: auto;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    transform: translateY(20px);
+    /* Optional: Add a subtle vertical translation */
+    animation: fadeIn ease-in-out 1s forwards;
+}
+
+.producer-products .products-container {
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+.messages-cont{
+    width: 85%;
+    margin: auto;
+    transform: translateY(20px);
+    /* Optional: Add a subtle vertical translation */
+    animation: fadeIn ease-in-out 1s forwards;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
