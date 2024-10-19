@@ -2,6 +2,11 @@
 
 This platform connects local Lebanese producers, artisans, and farmers to consumers, enabling them to showcase and sell high-quality products directly. Built with **React.js** for the frontend, **Node.js** for the backend, and **MySQL** as the database, this project demonstrates advanced full-stack development skills and a user-friendly interface.
 
+## Project Overview
+- Created by: Abdelaziz Mohamad
+- Date of Completion: Feb 2024
+- Project Type: Full-Stack Web Application (React.js, Node.js, MySQL)
+
 ## Features
 - **Public Browsing**: Users can view products and producers on the platform without logging in.
 - **User Authentication**: Fully secure authentication using JWT (JSON Web Tokens) is implemented to ensure data security and user privacy.
